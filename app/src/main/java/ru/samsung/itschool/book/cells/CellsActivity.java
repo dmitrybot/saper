@@ -11,12 +11,15 @@ import android.view.View.OnLongClickListener;
 import android.widget.Button;
 import android.widget.GridLayout;
 
+import androidx.appcompat.app.AppCompatActivity;
+
 
 import task.Stub;
 import task.Task;
 
-public class CellsActivity extends Activity implements OnClickListener,
-        OnLongClickListener {
+public class CellsActivity extends AppCompatActivity {
+
+    private final Context context = this;
 
     private int WIDTH = 10;
     private int HEIGHT = 10;
@@ -47,28 +50,6 @@ public class CellsActivity extends Activity implements OnClickListener,
             }
     }
 
-    @Override
-    public boolean onLongClick(View v) {
-        //Эту строку нужно удалить
-        Stub.show(this, "Добавьте код в функцию активности onLongClick() - реакцию на долгое нажатие на клетку");
-        return false;
-    }
-
-    @Override
-    public void onClick(View v) {
-        //Эту строку нужно удалить
-        Stub.show(this, "Добавьте код в функцию активности onClick() - реакцию на нажатие на клетку");
-
-        Button tappedCell = (Button) v;
-
-        //Получаем координтаты нажатой клетки
-        int tappedX = getX(tappedCell);
-        int tappedY = getY(tappedCell);
-        //ADD YOUR CODE HERE
-        //....
-
-    }
-
 	/*
      * NOT FOR THE BEGINNERS
 	 * ==================================================
@@ -92,8 +73,29 @@ public class CellsActivity extends Activity implements OnClickListener,
                 LayoutInflater inflater = (LayoutInflater) getApplicationContext()
                         .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 cells[i][j] = (Button) inflater.inflate(R.layout.cell, cellsLayout, false);
-                cells[i][j].setOnClickListener(this);
-                cells[i][j].setOnLongClickListener(this);
+                cells[i][j].setOnClickListener(new OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        //Эту строку нужно удалить
+                        Stub.show(context, "Добавьте код в функцию активности onClick() - реакцию на нажатие на клетку");
+
+                        Button tappedCell = (Button) v;
+
+                        //Получаем координтаты нажатой клетки
+                        int tappedX = getX(tappedCell);
+                        int tappedY = getY(tappedCell);
+                        //ADD YOUR CODE HERE
+                        //....
+                    }
+                });
+                cells[i][j].setOnLongClickListener(new OnLongClickListener() {
+                    @Override
+                    public boolean onLongClick(View v) {
+                        //Эту строку нужно удалить
+                        Stub.show(context, "Добавьте код в функцию активности onLongClick() - реакцию на долгое нажатие на клетку");
+                        return false;
+                    }
+                });
                 cells[i][j].setTag(i + "," + j);
                 cellsLayout.addView(cells[i][j]);
             }
