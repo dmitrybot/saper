@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <Button
+        android:layout_width="427dp"
+        android:layout_height="240dp"
+        android:onClick="restart1"
+        android:text="10x10" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:onClick="restart2"
+        android:text="50x50" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="240dp"
+        android:onClick="restart3"
+        android:text="100x100" />
+</LinearLayout>

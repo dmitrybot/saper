@@ -4,43 +4,56 @@
 4
 5    <uses-sdk
 6        android:minSdkVersion="14"
-6-->D:\Leo's\Projects\GitHub\Samsung\Cells\app\src\main\AndroidManifest.xml
+6-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml
 7        android:targetSdkVersion="29" />
-7-->D:\Leo's\Projects\GitHub\Samsung\Cells\app\src\main\AndroidManifest.xml
+7-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml
 8
 9    <application
-9-->D:\Leo's\Projects\GitHub\Samsung\Cells\app\src\main\AndroidManifest.xml:7:5-23:19
+9-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:7:5-29:19
 10        android:allowBackup="true"
-10-->D:\Leo's\Projects\GitHub\Samsung\Cells\app\src\main\AndroidManifest.xml:8:9-35
+10-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:8:9-35
 11        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
-11-->[androidx.core:core:1.3.0] C:\Users\RealityShift\.gradle\caches\transforms-2\files-2.1\d493e026815f3bfe39e8e5316d90ef2b\core-1.3.0\AndroidManifest.xml:24:18-86
+11-->[androidx.core:core:1.3.0] C:\Users\Asus\.gradle\caches\transforms-2\files-2.1\d493e026815f3bfe39e8e5316d90ef2b\core-1.3.0\AndroidManifest.xml:24:18-86
 12        android:debuggable="true"
 13        android:icon="@drawable/ic_launcher"
-13-->D:\Leo's\Projects\GitHub\Samsung\Cells\app\src\main\AndroidManifest.xml:9:9-45
+13-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:9:9-45
 14        android:label="@string/app_name"
-14-->D:\Leo's\Projects\GitHub\Samsung\Cells\app\src\main\AndroidManifest.xml:10:9-41
-15        android:testOnly="true"
-16        android:theme="@style/AppTheme" >
-16-->D:\Leo's\Projects\GitHub\Samsung\Cells\app\src\main\AndroidManifest.xml:11:9-40
-17        <activity
-17-->D:\Leo's\Projects\GitHub\Samsung\Cells\app\src\main\AndroidManifest.xml:12:9-22:20
-18            android:name="ru.samsung.itschool.book.cells.CellsActivity"
-18-->D:\Leo's\Projects\GitHub\Samsung\Cells\app\src\main\AndroidManifest.xml:13:13-42
-19            android:label="@string/app_name"
-19-->D:\Leo's\Projects\GitHub\Samsung\Cells\app\src\main\AndroidManifest.xml:14:13-45
-20            android:screenOrientation="portrait" >
-20-->D:\Leo's\Projects\GitHub\Samsung\Cells\app\src\main\AndroidManifest.xml:15:13-49
-21            <intent-filter>
-21-->D:\Leo's\Projects\GitHub\Samsung\Cells\app\src\main\AndroidManifest.xml:17:13-21:29
-22                <action android:name="android.intent.action.MAIN" />
-22-->D:\Leo's\Projects\GitHub\Samsung\Cells\app\src\main\AndroidManifest.xml:18:17-69
-22-->D:\Leo's\Projects\GitHub\Samsung\Cells\app\src\main\AndroidManifest.xml:18:25-66
-23
-24                <category android:name="android.intent.category.LAUNCHER" />
-24-->D:\Leo's\Projects\GitHub\Samsung\Cells\app\src\main\AndroidManifest.xml:20:17-77
-24-->D:\Leo's\Projects\GitHub\Samsung\Cells\app\src\main\AndroidManifest.xml:20:27-74
-25            </intent-filter>
-26        </activity>
-27    </application>
-28
-29</manifest>
+14-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:10:9-41
+15        android:theme="@style/AppTheme" >
+15-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:11:9-40
+16        <activity
+16-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:12:9-17:20
+17            android:name="ru.samsung.itschool.book.cells.CellsActivity"
+17-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:13:13-42
+18            android:label="@string/app_name"
+18-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:14:13-45
+19            android:screenOrientation="portrait" >
+19-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:15:13-49
+20        </activity>
+21        <activity
+21-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:18:9-20:20
+22            android:name="ru.samsung.itschool.book.cells.AboutActivity"
+22-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:18:19-48
+23            android:label="@string/lose_text" >
+23-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:19:13-46
+24        </activity>
+25        <activity
+25-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:21:9-28:20
+26            android:name="ru.samsung.itschool.book.cells.MenuActivity"
+26-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:21:19-47
+27            android:label="menu" >
+27-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:22:13-33
+28            <intent-filter>
+28-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:23:13-27:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:24:17-69
+29-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:24:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:26:17-77
+31-->C:\Users\Asus\Desktop\mirea\sumsung\github\1.11-Cells\app\src\main\AndroidManifest.xml:26:27-74
+32            </intent-filter>
+33        </activity>
+34    </application>
+35
+36</manifest>
